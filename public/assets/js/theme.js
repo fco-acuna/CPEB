@@ -378,3 +378,25 @@ docReady(navbarInit);
 docReady(detectorInit);
 docReady(scrollToTop);
 //# sourceMappingURL=theme.js.map
+
+
+const buttons = document.querySelectorAll('.button-13');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Obtiene el ID del contenido correspondiente usando el atributo data-content
+        const contentId = button.getAttribute('data-content');
+        const content = document.getElementById(contentId);
+        
+        // Cambia la visibilidad del contenido
+        if (content.style.display === 'none' || content.style.display === '') {
+            content.style.display = 'block'; // Muestra el contenido
+            button.innerHTML = 'Menos información'; // Cambia el texto del botón
+        } else {
+            content.style.display = 'none'; // Oculta el contenido
+            button.innerHTML = 'Más información'; // Cambia el texto del botón
+        }
+    });
+});
+
+

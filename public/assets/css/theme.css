@@ -67,6 +67,266 @@ body {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
+p {
+  margin: 0;
+}
+.reconocimientos {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 20px;
+  
+  margin: auto;
+}
+
+.titulo-reconocimiento {
+  text-align: center;
+}
+
+.reconocimiento {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  height: 420px;
+  text-align: center;
+}
+
+.reconocimiento h2 {
+  margin-top: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.contenido {
+  margin-top: 10px;
+  color: #666;
+}
+
+.container-alianzas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content-alianzas {
+  text-align: center;
+  justify-content: center;
+  width: 80%;
+  padding: 20px;
+}
+
+.content-alianzas h1 {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.content-alianzas h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.content-alianzas p {
+  line-height: 1.6;
+  margin: 0 auto;
+  width: 70%;
+}
+
+.logos {
+  width: 100%;
+  text-align: center;
+}
+
+
+.logo {
+  width: 150px;
+  margin: 20px;
+  mix-blend-mode: multiply;
+}
+
+.content-alianzas.button {
+  background-color: #ffcc00;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.content-alianzas.button:hover {
+  background-color: #e6b800;
+}
+.equipo {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 60px;
+  margin-top: 40px;
+  gap: 20px;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 30%;
+}
+
+.team-member img {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+}
+
+.team-member .position {
+  color: #ff6600;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-member .name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.team-member .description {
+  font-size: 0.9rem;
+  text-align:  center;
+  justify-content: center;
+}
+
+.team-member-1-background {
+  background-color: #ff9900;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+}
+
+.team-member-1-background img {
+  height: 150px;
+  width: 150px;
+}
+
+.team-member-2-background {
+  background-color: #007bff;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Asegura que la imagen esté centrada horizontalmente */
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  position: relative; /* Habilita el uso de top en el elemento hijo */
+}
+
+.team-member-2-background img {
+  height: 150px;
+  width: 150px;
+  position: relative; /* Permite mover la imagen usando top */ /* Ajusta este valor para subir la imagen según sea necesario */
+}
+
+.team-member-3-background {
+  background-color: #007bff;
+  border-radius: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Asegura que la imagen esté centrada horizontalmente */
+  overflow: hidden;
+  height: 100px;
+  width: 100px;
+  position: relative; /* Habilita el uso de top en el elemento hijo */
+}
+
+.team-member-3-background img {
+  height: 150px;
+  width: 150px;
+  position: relative; /* Permite mover la imagen usando top */
+  top: -5px; /* Ajusta este valor para subir la imagen según sea necesario */
+}
+
+.content {
+  height: auto;
+  width: auto;
+}
+
+.contenido_imagen {
+  height: 150px;
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: -30px;
+}
+
+#reconocimiento_1 {
+  display: block; 
+  margin: 0 auto; 
+  height: 90px; 
+}
+
+#reconocimiento_2 {
+  height: 90px; 
+  padding-top: 10%;
+}
+
+#reconocimiento_3 {
+  height: 120px;
+}
+
+#more-info {
+  display: none;
+}
+
+#read-more {
+
+
+
+
+.button-13 {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Amazon Ember",sans-serif;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  width: 100px;
+}
+
+.button-13:hover {
+  background-color: #f7fafa;
+}
+
+.button-13:focus {
+  border-color: #008296;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  outline: 0;
+}
+}
+
+#read-more:hover {
+  background-color: #3e8e41;
+}
+
 [tabindex="-1"]:focus:not(:focus-visible) {
   outline: 0 !important;
 }
@@ -138,11 +398,6 @@ h5, .h5 {
 
 h6, .h6 {
   font-size: 0.83333rem;
-}
-
-p {
-  margin-top: 0;
-  margin-bottom: 1rem;
 }
 
 abbr[title],
@@ -327,16 +582,8 @@ label {
   display: inline-block;
 }
 
-button {
-  border-radius: 0;
-}
-
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-
 input,
-button,
+
 select,
 optgroup,
 textarea {
@@ -346,14 +593,12 @@ textarea {
   line-height: inherit;
 }
 
-button,
+
 select {
   text-transform: none;
 }
 
-[role="button"] {
-  cursor: pointer;
-}
+
 
 select {
   word-wrap: normal;
@@ -363,19 +608,7 @@ select {
   display: none;
 }
 
-button,
-[type="button"],
-[type="reset"],
-[type="submit"] {
-  -webkit-appearance: button;
-}
 
-button:not(:disabled),
-[type="button"]:not(:disabled),
-[type="reset"]:not(:disabled),
-[type="submit"]:not(:disabled) {
-  cursor: pointer;
-}
 
 ::-moz-focus-inner {
   padding: 0;
@@ -17362,7 +17595,6 @@ section {
 }
 
 input,
-button,
 select,
 optgroup,
 textarea,
