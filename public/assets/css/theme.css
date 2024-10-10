@@ -1,20 +1,4 @@
-/* -------------------------------------------------------------------------- */
-/*                                 Theme                                      */
-/* -------------------------------------------------------------------------- */
-/* prettier-ignore */
-/* -------------------------------------------------------------------------- */
-/*                                  Utilities                                 */
-/* -------------------------------------------------------------------------- */
-/*-----------------------------------------------
-|   Bootstrap Styles
------------------------------------------------*/
-/*!
- * Bootstrap v5.0.0-alpha1 (https://getbootstrap.com/)
- * Copyright 2011-2020 The Bootstrap Authors
- * Copyright 2011-2020 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
- 
+
 :root {
   --bs-blue: #2500F9;
   --bs-indigo: #727cf5;
@@ -104,9 +88,10 @@ section {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 20px;
   width: 300px;
-  height: 420px;
+  height: 350px;
   text-align: center;
 }
+
 
 #reconocimiento_4 {
   height: 100px;
@@ -179,9 +164,7 @@ input[type="submit"]:hover {
 
 .content-alianzas {
   text-align: center;
-  justify-content: center;
-  width: 80%;
-  padding: 20px;
+  padding: 10px;
   
 }
 
@@ -196,8 +179,6 @@ input[type="submit"]:hover {
 
 .content-alianzas p {
   line-height: 1.6;
-  margin: 0 auto;
-  width: 70%;
 }
 
 .logos {
@@ -208,8 +189,9 @@ input[type="submit"]:hover {
 
 
 .logo {
-  width: 150px;
-  margin: 20px;
+  height: auto;
+  width: 200px;
+  margin-bottom: 20px;
   mix-blend-mode: multiply;
 }
 
@@ -372,44 +354,6 @@ input[type="submit"]:hover {
   display: none;
 }
 
-#read-more {
-
-
-
-
-.button-13 {
-  background-color: #fff;
-  border: 1px solid #d5d9d9;
-  border-radius: 8px;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  box-sizing: border-box;
-  color: #0f1111;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "Amazon Ember",sans-serif;
-  font-size: 13px;
-  line-height: 29px;
-  padding: 0 10px 0 11px;
-  position: relative;
-  text-align: center;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  vertical-align: middle;
-  width: 100px;
-}
-
-.button-13:hover {
-  background-color: #f7fafa;
-}
-
-.button-13:focus {
-  border-color: #008296;
-  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
-  outline: 0;
-}
-}
 
 #read-more:hover {
   background-color: #3e8e41;
@@ -838,6 +782,122 @@ progress {
     font-size: 2.98598rem;
   }
 }
+
+.container-alianzas {
+  text-align: center; /* Centra el texto del contenedor */
+}
+
+.logos {
+  display: flex;
+  justify-content: center; /* Centra los logos en la fila */
+  margin: 15px 0; /* Margen superior e inferior */
+}
+
+.logos div {
+  display: flex;
+  flex-direction: column; /* Coloca los logos en columna */
+  align-items: center; /* Centra los logos horizontalmente */
+  margin: 0 10px; /* Espacio entre las columnas de logos */
+}
+
+.logo {/* Altura fija para los logos */
+  margin-bottom: 10px; /* Espacio entre logos */
+}
+
+@media (max-width: 820px) { /* Ajusta el valor según tus necesidades */
+  .logos {
+    flex-direction: column;
+  }
+  
+  .text-md-start {
+    text-align: left !important;
+    margin-top: 45px;
+  }
+
+  .logos > div {
+    margin-bottom: 15px; /* Espaciado entre las columnas */
+  }
+
+  .container-alianzas {
+    flex-direction: column;
+  }
+
+  .contact-derecha{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .contact-us-img img {
+    height: 300px;
+    text-align: cefnter;
+  }
+
+  .contact-us {
+    width: 100%;
+  }
+}
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.text-container {
+  margin-right: 40px;
+  max-width: 40%;
+}
+
+@media (max-width: 540px) {
+  .equipo {
+      display: flex;
+      flex-direction: column; /* Cambia la dirección a columna */
+      align-items: center; /* Centra los elementos */
+  }
+
+  .team-member {
+      width: 100%; /* Asegúrate de que cada miembro ocupe todo el ancho */
+      margin-bottom: 20px; /* Espacio entre miembros */
+  }
+
+  .team-member-3-background, .team-member-4-background {
+      text-align: center; /* Centra la imagen */
+  }
+
+  .description {
+      text-align: center; /* Centra el texto */
+  }
+
+  .content-container {
+    display: block; /* Elimina el flex en pantallas pequeñas */
+  }
+
+  .text-container {
+      max-width: 100%; /* Texto ocupa el 100% del ancho */
+      margin-right: 0; /* Elimina margen derecho */
+      text-align: center; 
+      padding-bottom: 15px;
+  }
+
+  .text-container p {
+    text-align: justify;
+  }
+
+  .image-container {
+      text-align: center; /* Centra la imagen en pantallas pequeñas */
+  }
+
+  .image-container img {
+    width: 300px;
+  }
+
+  .container-alianzas {
+    padding: 30px;
+  }
+  
+  
+}
+
 
 .display-4 {
   font-size: calc(1.37383rem + 1.48598vw);
@@ -13029,9 +13089,6 @@ fieldset:disabled .btn {
   }
   .fs-md-8 {
     font-size: 4.29982rem !important;
-  }
-  .text-md-start {
-    text-align: left !important;
   }
   .text-md-end {
     text-align: right !important;
